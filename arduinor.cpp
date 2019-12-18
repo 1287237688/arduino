@@ -18,7 +18,6 @@ void llong(){
   delay(300);
 }
 void loop() {
-  
   if (Serial.available()>0)
    {
         alp=Serial.read();
@@ -37,8 +36,7 @@ void loop() {
           sort();
         }
         else if(alp=='o'){
-          llong();
-          llong();
+          for(int i=0;i<3;i++) 
           llong();
         }
         else if(alp=='a')
