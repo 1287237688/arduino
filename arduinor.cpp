@@ -60,7 +60,7 @@ void loop() {
          else if(alp=='d')
         {
           sort();
-          llong();
+          for(int i=0;i<2;i++)
           llong();
         }
          else if(alp=='f')
