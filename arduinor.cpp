@@ -12,10 +12,10 @@ void sort(){
     delay(250);
 }
 void llong(){
-  digitalWrite(redPin,HIGH);
-  delay(1000);
-  digitalWrite(redPin,LOW);
-  delay(300);
+	digitalWrite(redPin,HIGH);
+	delay(1000);
+	digitalWrite(redPin,LOW);
+	delay(300);
 }
 void loop() {
   if (Serial.available()>0)
@@ -55,6 +55,12 @@ void loop() {
           llong();
           sort();
           llong();
+          sort();
+        }
+        else if(alp=='s')
+        {
+          sort();
+          sort();
           sort();
         }
          else if(alp=='d')
